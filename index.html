@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+        body {
+            background-color: #CBEC5C;
+        }
+
+        header {
+            padding-bottom: 20px;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            background-color: #D63588;
+            
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        .collapse {
+            padding-top: 35px;
+            
+        }
+        
+        .carousel-inner img {
+         width: 100%;
+           height: 380px;
+           
+        }
+
+        section h2 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #D6368A;
+            padding-top: 20px;
+        }
+
+        section p {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .time {
+            background-color: #D63588;
+        }
+
+        .time h2 {
+            color: #CBEC5C;
+        }
+
+        .time p {
+            color: #fff;
+        }
+
+        .card-text {
+            text-align: center;
+            font-weight: bold;
+            color: #c1e940;
+        }
+
+        .card-body {
+            color: #D63588;
+            text-align: center;
+        }
+
+        .container-time {
+            padding-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="imagens/logo.webp" alt="logo aime">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills ">
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "  href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "  href="#equipe">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "  href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "  href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div>
+            <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block" src="imagens/folhas.webp" alt="">
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item ">
+                        <img class="d-block" src="imagens/arvores.webp" alt="">
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block" src="imagens/cidade.jpg" alt="">
+                    </div>
+                </div>
+                <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+        
+            <div class="container">
+                <section id="inicio">
+                    <h2>Quem somos?</h2>
+                    <p>A <strong>Aimê</strong> é um studio de criatividade fundado pela geração z com o propósito de propagar o amor <br> através da arte. Somos uma equipe apaixonada por criar conteúdo autêntico e inspirador que <br> impacte positivamente a vida das pessoas.</p>
+    
+                    <p>Combinamos habilidades técnicas com uma abordagem única, resultando em trabalhos <br> excepcionais que são feitos com paixão!</p>
+                </section>
+            </div>
+            <section id="equipe" class="time">
+                <h2>Nosso time</h2>
+                <p>Somos um time de mente aberta e corações entusiasmados! Nossa jornada é recheada de cores, <br> ideias criativas e muita paixão pelo que fazemos. Afinal, não é todo dia que encontramos um grupo <br> de pessoas dispostas a desbravar o universo da inovação.</p>
+    
+                <p>Conheça a galera que está por trás de todas as sacadas geniais que rolam por aqui:</p>
+
+                <div class="container container-time">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="card text-bg">
+                                <div class="card-text">Copywriter
+                                </div>
+                                <img src="imagens/analu.webp" alt="">
+                                <div class="card-body" >
+                                    <h4>Analu Costa</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="card text-bg">
+                                <div class="card-text">Brand Designer
+                                </div>
+                                <img src="imagens/bia.webp" alt="">
+                                <div class="card-body" >
+                                    <h4>Bia Latanzi</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="card text-bg">
+                                <div class="card-text">Social Media
+                                </div>
+                                <img src="imagens/andy.webp" alt="">
+                                <div class="card-body" >
+                                    <h4>Andy Alegre</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </section>
+        </div>
+        
+    </div>
+    
+    
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
